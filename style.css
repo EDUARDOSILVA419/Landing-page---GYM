@@ -1,0 +1,262 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #111;
+    color: white;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#contacto {
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.planes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    color: black;
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+}
+
+.plan h3 {
+    margin-top: 0;
+}
+
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.boton {
+    background-color: white;
+    color: #111;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 20px;
+            .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .planes {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    .beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.beneficio {
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.beneficio h3 {
+    margin-top: 0;
+    color: #111;
+}
+
+.beneficio p {
+    line-height: 1.6;
+}}
+
+form {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.boton {
+    background-color: white;
+    color: #111;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+}
+
+.plan {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.beneficio {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beneficio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+

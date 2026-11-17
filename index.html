@@ -1,115 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Landing Page Gym | Proyecto Web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce EnergyGym: entrenamiento de fuerza, acompañamiento y opciones para construir tu constancia. Consulta planes e información para tu visita.">
+  <meta name="theme-color" content="#141715">
+  <title>EnergyGym | Tu energía. Tu siguiente nivel.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="gym-data.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-
-    <header>
-    <nav>
-        <h2 class="logo">EnergyGym</h2>
-
-        <ul class="menu">
-            <li><a href="#beneficios">Beneficios</a></li>
-            <li><a href="#planes">Planes</a></li>
-            <li><a href="#testimonio">Testimonio</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero">
-        <h1>Entrena fuerte. Construye disciplina.</h1>
-        <p>Transforma tu cuerpo con planes diseñados para fuerza, constancia y resultados reales.</p>
-        <a href="#contacto" class="boton">Quiero empezar</a>
-    </div>
-</header>
-
-    <main>
-
-        <section id="beneficios">
-    <h2>Por qué entrenar con nosotros</h2>
-
-        <div class="beneficios-grid">
-        <div class="beneficio">
-            <h3>Rutinas efectivas</h3>
-            <p>Entrenamientos diseñados para ganar fuerza, músculo y constancia.</p>
-        </div>
-
-        <div class="beneficio">
-            <h3>Ambiente sin juicios</h3>
-            <p>Un espacio donde puedes mejorar a tu ritmo sin sentir presión.</p>
-        </div>
-
-        <div class="beneficio">
-            <h3>Entrenadores expertos</h3>
-            <p>Apoyo para que entrenes mejor, evites errores y avances más rápido.</p>
-        </div>
-
-        <div class="beneficio">
-            <h3>Planes flexibles</h3>
-            <p>Opciones para principiantes, intermedios y personas con objetivos claros.</p>
-        </div>
-    </div>
-</section>
-
-        <section id="servicios">
-            <h2>Nuestros servicios</h2>
-
-            <section id="planes">
-    <h2>Nuestros planes</h2>
-
-    <div class="planes">
-        <div class="plan">
-            <h3>Plan básico</h3>
-            <p class="precio">$39/mes</p>
-            <p>Acceso completo al gimnasio y uso de máquinas.</p>
-        </div>
-
-        <div class="plan">
-            <h3>Plan completo</h3>
-            <p class="precio">$69/mes</p>
-            <p>Rutina personalizada, seguimiento mensual y acceso completo.</p>
-        </div>
-
-        <div class="plan">
-            <h3>Entrenamiento personal</h3>
-            <p class="precio">$35/sesión</p>
-            <p>Sesiones uno a uno para objetivos específicos.</p>
-        </div>
-    </div>
-</section>
-
-        <section id="testimonio">
-            <h2>Testimonio</h2>
-            <p>
-                “Gracias a EnergyGym pude ganar fuerza, confianza y constancia en mi entrenamiento.”
-            </p>
-        </section>
-
-        <section id="contacto">
-    <h2>Empieza hoy</h2>
-    <p>Déjanos tus datos y te contactaremos para ayudarte a elegir el mejor plan.</p>
-
-    <form>
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo" required>
-        <input type="tel" placeholder="Tu teléfono">
-        <textarea placeholder="Cuéntanos tu objetivo" required></textarea>
-        <button type="submit">Enviar mensaje</button>
-    </form>
-
-    <p>Instagram: @EnergyGym</p>
-    <p>WhatsApp: +1 000 000 0000</p>
-</section>
-
-    </main>
-
-    <footer>
-        <p>Proyecto creado por Eduardo - HTML & CSS</p>
-    </footer>
-
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="EnergyGym, inicio"><span class="brand-icon" aria-hidden="true">ϟ</span><span data-name>EnergyGym</span><span class="brand-dot">®</span></a>
+    <nav aria-label="Navegación principal"><a href="#espacio">El espacio</a><a href="#planes">Planes</a><a href="#preguntas">Preguntas</a></nav>
+    <a class="nav-contact" href="#contacto">Conócenos <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> FUERZA · CONSTANCIA · COMUNIDAD</p>
+        <h1 id="hero-title">TU ENERGÍA.<br>TU SIGUIENTE<br><span>NIVEL.</span></h1>
+        <p class="hero-description" id="intro">Entrena a tu ritmo. Construye disciplina. Haz espacio para una versión más fuerte de ti.</p>
+        <div class="hero-actions"><a class="button" href="#planes">Explorar planes <span aria-hidden="true">↗</span></a><a class="text-link" href="#espacio">Descubre EnergyGym <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-foot">No necesitas tener experiencia. Solo dar el primer paso.</p>
+      </div>
+      <div class="hero-image" role="img" aria-label="Zona de entrenamiento con pesas; imagen ilustrativa">
+        <span class="photo-label">EL CAMBIO EMPIEZA CONTIGO</span><div class="image-caption"><span>UN DÍA A LA VEZ.</span><strong>CADA REPETICIÓN<br>CUENTA.</strong><span class="image-arrow" aria-hidden="true">↗</span></div>
+      </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><span>ENTRENA CON INTENCIÓN</span><b>✳</b><span>AVANZA A TU RITMO</span><b>✳</b><span>ENCUENTRA TU ENERGÍA</span></div>
+    <section class="section" id="espacio" aria-labelledby="space-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / EL ESPACIO</p><h2 id="space-title">Más que entrenar.<br>Volver a ti.</h2></div><p>Un lugar para concentrarte en tus objetivos, aprender y disfrutar el proceso. Desde tu primer día, a tu propio ritmo.</p></div>
+      <div class="benefits" id="benefits"></div>
+    </section>
+    <section class="section plans-section" id="planes" aria-labelledby="plans-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / TU PUNTO DE PARTIDA</p><h2 id="plans-title">Tu objetivo.<br>Tu forma de entrenar.</h2></div><p>Conoce nuestras opciones y elige el acompañamiento que va contigo.</p></div>
+      <div class="plans" id="plans"></div><p class="section-note" id="plans-note"></p>
+    </section>
+    <section class="section faq-section" id="preguntas" aria-labelledby="faq-title"><div><p class="eyebrow">03 / ANTES DE EMPEZAR</p><h2 id="faq-title">El primer paso,<br>más claro.</h2><p>Resolvemos las dudas de tu primera visita.</p></div><div id="faqs" class="faqs"></div></section>
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title"><div class="contact-heading"><p class="eyebrow">04 / NOS VEMOS AQUÍ</p><h2 id="contact-title">HAZ ESPACIO<br>PARA <span>TI.</span></h2><p>Conoce el gimnasio y consulta los detalles para empezar.</p><div id="contact-links" class="hero-actions"></div><p id="contact-note" class="muted"></p></div><div class="visit"><div><h3>Ubicación</h3><p id="address"></p></div><div><h3>Horarios</h3><dl id="hours"></dl></div><div><h3>Para tu primera visita</h3><p id="first-visit"></p></div></div></section>
+    <noscript><p class="noscript">Activa JavaScript para consultar los planes, horarios y datos de contacto actualizados de EnergyGym.</p></noscript>
+  </main>
+  <footer><a class="brand" href="#inicio"><span class="brand-icon" aria-hidden="true">ϟ</span><span data-name>EnergyGym</span></a><p>Tu energía. Tu siguiente nivel.</p><a href="#inicio">Volver arriba ↑</a><small id="footer-note"></small></footer>
 </body>
 </html>
